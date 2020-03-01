@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New website</title>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=width-device,initial-scale=1.0">
+        <style>
+        * {
+  box-sizing: border-box;
+}
+
+        body {
+            
+            font-family:Helvetica ;
+            width:120%;
+            
+        }
+        
+        #ttle {
+            color:rgb(28, 232, 83);
+            padding:20px;
+            text-align:center;
+            font-size:30px;
+        }
+        #leftcolomn {
+            float:left;
+            width:50%;
+        }
+        
+          
+        
+        
+            
+        
+        #rightcolomn {
+           
+            float:left;
+            width:25%;
+            padding-left:5px;
+            margin-top:8px;
+        }
+        
+        #orcd {
+            box-shadow: 0 4px 5px 0 rgba(0, 3, 0), 0 6px 30px 0 rgba(0, 0, 0);
+            background-color:rgb(131, 230, 174);
+            margin-top:15px;
+            padding:5px;
+           
+        }
+       #osc {
+           
+           content:"";
+           display:table;
+           clear:both;
+            
+       }
+        
+        #dli {
+            background-color:rgb(44, 232, 50);
+            list-style-type:none;
+            padding:0;
+            margin:10px;
+            overflow:hidden;
+            border:1px solid white;
+            position:sticky;
+            width:95%;
+            top:0;
+        }
+        #dli a{
+            float:left;
+             display:block;
+             color:black;
+             text-align:center;
+             text-decoration:none;
+             padding: 14px 16px;
+        }
+        #dli a:hover {
+            color:white;
+            background-color:rgb(6, 9, 66);
+        }
+        #fotr {
+            
+            color:black;
+            background-color:rgb(65, 209, 122);
+            padding: 10px;
+            text-align:center;
+            margin-top: 20px;
+            font-size:18px;
+            
+        }
+
+        
+        .art {
+            background-color:rgb(228, 235, 218);
+            font-family:arial;
+            padding:8px;
+            margin:15px;
+        }
+        #pic {
+            display:block;
+            max-width:100%;
+            height:auto;
+            padding:5px;
+            margin-left:auto;
+           margin-right:auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+            
+        }
+        #pic.hover {
+            border:1px solid black;
+        }
+        #fu {
+            box-shadow: 0 4px 8px 0 rgba(12, 13, 12), 0 6px 20px 0 rgba(0, 0, 0);
+             background-color:rgb(88, 214, 117);
+              margin-top:15px;
+            padding:5px;
+        }
+        .af {
+            color:rgb(224, 81, 117);
+            background-color:rgb(168, 228, 230);
+            margin-top:15px;
+            padding:5px;
+        }
+        .ml {
+            color:rgb(4, 30, 107);
+            text-decoration:none;
+        }
+       
+        
+           i {
+               color:white;
+               background-color:red;
+               
+           }  
+           h1 {
+              font-family:arial;
+               text-align:center; 
+           }
+           h2 {
+                font-family:arial;
+               text-align:center;
+           }
+           h4 {
+              font-family:arial;
+               text-align:center; 
+           }
+        #srcbtn {
+            width:100%;
+            box-sizing:border-box;
+            border:2px solid rgb(88, 219, 96);
+            border-radius:4px;
+            background-color:white;
+             background-position:10px 10px;
+             background-repeat:no-repeat;
+            font-size:16px;
+            padding:12px 20px 12px 40px;
+            margin:5px;
+        }
+        
+        .osc::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.osc {
+    float:left;
+}
+.menu {
+  width: 25%;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  
+}
+
+.menu li{
+    transition: all 0.10s;
+    display:inline block;
+    padding: 15px 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow:0 5px white;
+  padding: 15px 25px;
+  margin-top: 8px;
+  background-color: rgb(128, 218, 245);
+  
+}
+.menu li span {
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.10s;
+}
+ .menu li span:after {
+     content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.10s;
+ }
+
+.menu li:hover  {
+  background-color: lightgreen;
+  opacity:1;
+  padding-right: 25px;
+}
+.menu li :hover span:after {
+    opacity: 1;
+  right: 0;
+}
+.menu li:active:after {
+    background-color: lightgreen;
+    box-shadow:0 5px gray;
+     transform: translateY(4px);
+       padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+    
+}
+ #jump {
+     text-decoration:none;
+     color:rgb(66, 66, 63);
+ }
+ .dropbtn {
+     width:225%;
+  background-color: rgb(128, 218, 245);
+  color: rgb(66, 66, 63);
+  padding: 8px;
+  margin-top:8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    
+    font-size:12px;
+  display:none;
+  position: absolute;
+  background-color: rgb(110, 230, 200);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgb(33, 17, 20);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(224, 134, 157);
+    
+}
+
+.dropdown:hover .dropdown-content {
+   
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: lightgreen;
+}
+ .pagination {
+     display:inline-block;
+ }
+ .pagination a {
+     background-color:rgb(122, 194, 130);
+     color:black;
+     float:left;
+     padding:14px 16px;
+     margin: 7px;
+     text-decoration:none;
+     transition:background-color .3s;
+     border:1px solid rgb(171, 162, 171);
+ }
+ .pagination a.active {
+     background-color:rgb(66, 212, 83);
+     color:white;
+     border:1px solid rgb(140, 136, 140);
+ }
+ .pagination a:hover:not(active) {
+     background-color:rgb(66, 212, 83);
+ }
+ 
+ 
+ 
+        </style>
+    </head>
+    <body>
+       <div id="ttle">
+        <h1>FRM.org</h1>
+        </div>
+       
+        <div id="dli">
+        
+        <b>
+            <a href="#">HOME</a>
+            <a href="#">CONTENTS</a>
+            <a href="#">TERM</a>
+        <a href="#">ABOUT</a>
+            </b>
+        
+        </div>
+        <form>
+            <input type="text" name="search" placeholder="Search..." id="srcbtn">
+        </form>
+        
+        
+        <div id="osc">
+        
+        <div class="osc menu">
+        
+        
+        <ul>
+          <div class="dropdown">
+        <button class="dropbtn">Articles</button>
+        <div class="dropdown-content">
+  <a href="#omf">ORCHID, MONEY FLOWER</a>
+  <a href="#bs">THE LIFE OF BROWN SQUIRRELS</a>
+  <a href="#cc">CHITTAGONIAN CULTURE</a>
+  </div>
+        </div>
+        
+         <li><a href="#"id="jump" style="vertical-align:middle"><span>Graphic works</span></a></li><br>
+        <li><a href="#"id="jump">Logo designs</a></li><br>
+        <li><a href="#"id="jump">B. card design</a></li><br>
+        </ul>
+        
+        </div>
+        <div id="leftcolomn">
+        <div id="orcd">
+        
+        <h2 id="omf"><b>ORCHID, MONEY FLOWER</b> </h2>
+        <h4>Title descripction, Feb 24,2020</h4>
+        
+        <p class="art">
+        <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/A_and_B_Larsen_orchids_-_Cattleya_Queen_Sirikhit_Diamond_Crown_DSCN4414.JPG/800px-A_and_B_Larsen_orchids_-_Cattleya_Queen_Sirikhit_Diamond_Crown_DSCN4414.JPG">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/A_and_B_Larsen_orchids_-_Cattleya_Queen_Sirikhit_Diamond_Crown_DSCN4414.JPG/800px-A_and_B_Larsen_orchids_-_Cattleya_Queen_Sirikhit_Diamond_Crown_DSCN4414.JPG" alt="beautiful orchid"width="1000" height="300" id="pic"></a><br>
+          If you get one coin, buy something to satisfy your hunger. If you get two, then, my beloved, buy out some flowers by half. Yes, today the topic to discuss is flower , it would be tough to find someone who doesn't love flower , and when if it is Orchid , then there would be nothing to say .Orchid are famous from ancient time for mindblowing colour and beauty , flower  transforms from the bitop of the plant; which is very attractive and works as medium of the reproductive of the plant , they are placed   to be   the member of Orchidaceae family in the classification of plant, All over the world, even in frigid countries , they are seen to be born up.  Orchid found in temperate and hot areas are generally dependent and evergreen , they are born well in the place of extrem sunlight rather than place of shadow , That's why they are seen to be growing up under the branches of big trees , in winter their leaf fall down and in spring thw flowers grows up. The leaves of Orchid are simple, kind of alternate watery and allergic . There is a layer of glycerol on the leaf, therefore internal water cannot get out of the leaf. As a result, Orchid can survive in any condition . Economical importance: 1. Orchids are used in balconies to make the internal environment fresher . It has good market value in South Asian countries, 3. If we grow up these by genetical technology, we can export them and make foreign exchanges 4 .in many medical labs Orchid are used in curing many fatal diseases . 5. The perfume which is synthesised from Orchid can be used in Icecr.  
+        </p>
+        </div>
+      <div>
+        
+       <div id="orcd">
+       
+        <h2 id="bs"><b>THE LIFE OF BROWN SQUIRRELS</b></h2>
+        <h4>Title descripction, Feb 24, 2020</h4>
+        
+        <p class="art">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Sciurus_carolinensis_-British_Columbia%2C_Canada-8.jpg" alt="beautiful squirell"width="1000" height="300"id="pic"><br>
+        Expansion: South Asian countries such as: India, Nepal, Bhutan, Sri Lanka, China, Bangladesh and so on Brown squirrels are also seen in Myanmar. About them, they are seen everywhere, but in the mountain forests more can be seen.<br> 
+Temperament and habitat: The animal is calm but calm. In the presence of the species, his calm nature does not exist anymore. The antithesis begins and another fight to persecute. One if disturbed or in the presence of the same species Kind words like "Chip, Chip, Chip"; They usually live alone and are in pairs during the breeding season. The animal is on a tree (tree dweller) and creates habitat on both sides of the ground. They make a nesting place with leaves and straw in the dry.<br> 
+ Food: Brown squirrels are mainly omnivorous animals. During the day, they jump from tree to tree in search of food. But the body of those who can fly is a"Patagium membrane". Most squirrels can move from tree to tree in the process of gliding. There are almost all kinds of delicious fruits, including guava, betel nut, coconut, mango, jam, jackfruit, kamranga, almond, some of the leaves and bark of the tree are eaten as food. The bark also receives insects and their larvae as food.<br> 
+ Body description: Body size is about 20 cm. And the tail is up to 5 cm. Adult squirrels can weigh up to 5 grams. The animal has two pairs of legs in front and back. The back foot is taller than the front leg and is used for jumping. Feet 3-5 avuls, tendons and nails exist. They have different colors. The lamb is soft, shiny and the lower part of the body is white and gray. The eye color is black. Mate has 20 teeth.<br> 
+ Breeding and Lifetime: Up to 2-5 babies are born once a year but most babies die in the 5th year. Early on, children are limeless, blind and toothless. In newborns, mothers gradually become self-dependent through the care of squirrels for 2–3 months. Adult animals can survive for 3-5 years. <br> 
+Importance of maintaining the balance of nature: Every organism on earth has a specific position and importance in the natural food chain. Adapa brown cats are also no exception. They help in the creation of natural forests by seed dispersal. Some tribes eat their meat. They play a pivotal role in the spread of Shimul and coconut flowers. They keep the environment clean by eating harmful pesticides. The destruction of forests and today, this beast of conservation of natural balance is extinct due to the anesthesia of the nose. In order to sustain the animals in the natural environment, we need awareness.<br> 
+
+        </p>
+        </div>
+        </div>
+        
+        <div id="orcd">
+        
+        <h2 id="cc"><b>CHITTAGONIAN CULTURE</b></h2>
+        <h4>Title descripction, Feb 24, 2020</h4>
+        
+        <p class="art">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Chittagong_city_skyline.jpg/800px-Chittagong_city_skyline.jpg" alt="beautiful chittagong"width="1000" height="300"id="pic"><br>
+        I am in my early twenties and I have mostly stayed within the geographical boundary of Chittagong throughout my entire life. I was born in this landscape filled with fascinating cultures and colorful people. This could be the only place in the vast world where you won't find any diversity and hatred. Chittagong, known as the city of old and rich cultures for hundreds of years. An example of beauty, culture and hospitality is found here. This city is also world famous for its unique hospitality . For that reason, the city was called "Islamabad" by Mughal's.The chittagonian community is also known as "Chatgayya" . In this city, there are some unparalleled rules and lifestyle in culture. Let's know about the culture of Chittagong city. Chittagong is known as the Land of the Twelve Saints due to the prevalence of major Sufi Muslim shrines in the district. Historically, Sufism played an important role in the spread of Islam in the region. Prominent dargahs include the mausoleum of Shah Amanat and the shrine of Bayazid Bastami. The Bastami shrine hosts a pond of black softshell turtles.<br> 
+ The people of chittagonian community is followed by some unique characterized lifestyle ,art, values and habits .These cultural acts or arts are such as hospitality, Maijbhnadari song, seasonal Festival and Honour for elder and old citizens. Chattgayya represents their culture all over the country through some particular act.The "Chatgayya Mezban " is a felicitous example of hospitality. The word Mezban refers to a traditional party for hundreds of people who gather to join parties to eat traditional feast. This traditional feast is made with bangla recipes such as rice, beef with broth, Dals, etc. The immensely popular traditional feast Mezban is very famous all over the country.<br>  
+The people of Chittagong also celebrate seasonal festivals, especially winter and summer. In winter, the whole chittagong is furious to celebrate the winter festival with traditional rice cakes.The "Rice cake" is made with rice, sweets and coconut. It is eaten with date juice. When any visitor comes to Chittagong during winter, he is welcomed by that traditional rice cake. Honey-Rice is another awesome traditional food which is made with rice, milk, coconut etc. Fan palm cake is also a traditional food .<br>  
+The peoples of Chittagong are very well mannered and abundant. They always respect their elderly brothers, grandfather, grandmother, senior citizens, especially their neighbors. Before weeding, the groom and bride side discuss some important topics and rules of weeds which must have to follow both the groom and the bride's side . This system is called "panchalla". There is another rule or system in weeding which has to follow the bride's side. The system is like that. The bride side has to send seasonal food, fruits and festive meals.In reply, the groom side is the same.<br>  
+Maizbhandari Gan mystic folk songs of the Maizbhandari cult, started in Chittagong about a century ago by Syed Ahmadullah (1826-1906), a resident of the village of Maizbhandar under Fatikchhari in Chittagong. He and his followers used to assemble at Maizbhandar to practise mystic rites and sing spiritual songs. The cult became known as Maizbhandari and the songs as Maizbhandari songs. Maizbhandari songs praise Allah, the Prophet Muhammad (Sm), and Muslim saints and pairs. The songs are about love for humanity, morality, non-communalism and divine love. Maizbhandari songs have spread beyond Chittagong and are now also sung by singers who are not followers of the cult in different cultures.There are also some local songs which are sung in Chittagong, the local language.<br>  
+
+        </p>
+        
+        </div>
+        <div class="pagination"> 
+    <a href="#">&laquo;</a>
+       <a href="#">1</a>
+       <a href="#"class="active">2</a>
+       <a href="#">3</a>
+       <a href="#">&raquo;</a>
+    </div>
+         </div>
+      
+        <div id="rightcolomn">
+        <div id="fu">
+        <h3>About Me</h3>
+        <p class="af">
+           we are provide you some unique articles, grafics design, bussiness card design , logo design. It is fully legit website and we are here in this field about 4 years. It isa none profite website. 
+        </p>
+        
+        </div>
+        <div id="fu">
+        <h3 >Follow Us</h3>
+        <p class="af">
+         <b>Insta</b>:<a href="#"class="ml"> frm.org127</a><br>
+         <b>Twitter</b>:<a href="#"class="ml"> frm.org127<br>@gmail.com</a>
+        </p>
+        
+        </div>
+        </div>
+        </div>
+         
+        <div>
+        <footer>
+        <div id="fotr" >
+        <p> <i>&copy; </i> All rights reserved.</p>
+    <p> Email:<a href="#"class="ml"> frm.org127@gmail.com</a></p>
+    
+    
+    </div>
+    </footer>
+     </div>
+    </body>
+</html>
