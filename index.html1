@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}  
+body {
+  background-color:rgb(2, 36, 26);
+  background-image:url("https://images.pexels.com/photos/397913/pexels-photo-397913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+ width:100%
+  
+}
+
+h1 {
+  color: rgb(14, 1, 107);
+  text-align: center;
+  text-shadow: 5px 5px 20px green, 0 0 70px green, 0 0 25px lightgreen;
+}
+
+
+  
+
+#abin {
+   width:100%;
+  box-shadow:5px 5px 4px black;
+    background-color:rgb(14, 15, 14);
+    color:black;
+    padding:14px 20px;
+    border:1px solid blue ;
+    border-radius:10px;
+    cursor:pointer;
+    }
+    #sr {
+        font-size:16px;
+        background-color:rgb(21, 148, 74);
+    color:white;
+    padding:12px 20px;
+    margin-top:0px 0;
+    text-align:center;
+    border:2px solid blue;
+    border-radius:4px;
+   cursor:pointer;
+    }
+    #sr:hover {
+        background-color:rgb(5, 11, 71);
+         color:white;
+         box-shadow:0 8px 16px 0 rgba(227, 218, 227), 0 6px 20px 0 rgba(5, 0, 5);
+    }
+   
+    .info {
+        margin:30px;
+        border:none;
+        color:rgb(18, 224, 45) ;
+       position:static;
+        
+       
+    }
+    .cm {
+        
+  
+ color:rgb(100, 107, 212);
+  
+  background-color:white;
+    }
+    .cm:hover{
+        color:rgb(5, 13, 158);
+        box-shadow: 0 0 2px 1px rgba(1, 4, 5, 0.5);
+    }
+   #fln {
+       text-align:left;
+   } 
+   #ln {
+       background-color:white;
+        color:rgb(23, 23, 21) ;
+       position:static;
+        padding:5px;
+        margin:5px;
+   }
+   #lg {
+    font-size:16px;
+    background-color:rgb(88, 209, 199);
+    color:black;
+    padding:12px 20px;
+    margin:5px 0;
+    border:1px solid rgb(17, 212, 39);
+    border-radius:4px;
+    cursor:pointer;
+   }
+   #lg:hover {
+       background-color:rgb(134, 138, 116);
+         color:white;
+         box-shadow:0 8px 16px 0 rgba(227, 218, 227), 0 6px 20px 0 rgba(5, 0, 5);
+   }
+   #lgn {
+       text-align:center;
+   }
+   #leftcolomn {
+       box-shadow:0 8px 16px 0 rgba(5, 0, 5), 0 6px 20px 0 rgba(5, 0, 5);
+       margin-left:0px;
+       padding:0px;
+       border-radius:4px;
+       background-color:white;
+       float:left;
+       
+   }
+    #rightcolomn {
+       text-align: left;
+        border-radius:4px;
+        padding:30px;
+        margin-left:30px;
+        background-color:white;
+        float:left;
+        box-shadow:0 8px 16px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(5, 0, 5);
+    }
+    #sl {
+       width:100%;
+       content:"";
+       clear:both;
+       display:table;
+       text-align:center
+    }
+    .tooltip{
+        position:relative;
+        display:inline block;
+       
+       
+    }
+    .tooltip .tooltiptext {
+        visibility:hidden;
+        background-color:white;
+        color:black;
+        width:150px;
+        text-align:center;
+        border-radius:6px;    
+        padding:2px 0;
+        position:absolute;
+        z-index:1;
+        top:-5px;
+        left:120%;
+        margin-left: -60px;
+        opacity:0;
+        transition:opacity 2s;
+    }
+    .tooltip .tooltiptext::after {
+        content:"";
+        position:absolute;
+        top: 50%;
+        right: 100%;
+        
+        margin-top:-5px;
+        border-width:5px;
+        border-style:solid;
+        border-color: transparent white transparent transparent ;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility:visible;
+            opacity:1;
+        }
+        #part {
+            
+            margin-left:30px;
+            padding-left:15px;
+            float:left;
+        }
+</style>
+</head>
+<body>
+
+<h1>FRM.org</h1>
+<div id="sl">
+<div id="leftcolomn" >
+<form class="info">
+ 
+
+    
+    
+    <div class="tooltip"><input name="Firstneme"type="text"placeholder="FIRST NAME"autocomplete="on"id="abin"required> <p class="tooltiptext">Please, fill it correctly</p></div><br>
+    
+    <br>
+    
+    <div class="tooltip"><input name="Lastname"type="text"placeholder="LAST NAME"autocomplete="on"id="abin"required><p class="tooltiptext">Please, fill it correctly</p></div><br>
+    
+    <br>
+   
+    <div class="tooltip"><input type="text"name="username"placeholder=" USERNAME"autocomplete="on"id="abin"required><p class="tooltiptext">Please, fill it correctly</p></div><br>
+    
+    
+    
+    <br>    
+    <div class="tooltip"><input type="text"name="e-mail"placeholder="E-MAIL/ abar.mi130@gmail.com"autocomplete="on"id="abin"required><p class="tooltiptext">Please, fill it correctly</p></div><br>
+    
+    
+    
+    <br>
+    <div class="tooltip"><input type="text"name="pasw"placeholder="PASSWORD/abr3@#4h"autocomplete="on"id="abin"required><p class="tooltiptext">Please fill it uniquely</p></div><br>
+    
+    <br>
+    Click The Box:
+    <br>
+    <input type="checkbox" id="ok"name="ok" value="ok" required>
+    <label for="Term and Privacy">Click below</label>
+    <a target="blank" href="https://policies.google.com/terms?hl=en-US"><p class="cm" >Term and Privacy</p></a><br>
+    <div id="lgn">
+    <br>
+    Sign In:<br>
+    <br>
+    <input type="submit" value="Sign In"id="sr"><br>
+    </div>
+</form>
+</div>
+<div id="part">
+<div id="rightcolomn">
+<form id="ln">
+    
+   
+    
+    <br>    
+    <div class="tooltip"><input type="text"name="e-mail/username"placeholder="E-MAIL Or USERNAME"autocomplete="on"id="abin"required><p class="tooltiptext">Please, fill it correctly</p></div><br>
+   
+    
+   
+    <br>
+    <div class="tooltip"><input type="text"name="pasw"placeholder="PASSWORD"autocomplete="on"id="abin"required><p class="tooltiptext">Please, fill it correctly</p></div><br>
+    
+    <div id="lgn">
+    <br>
+    Log In:<br>
+    <br>
+    <input type="submit" value="Log In"id="lg"><br>
+    </div>
+</form>
+</div>
+</div>
+</div>
+<p></p>
+
+</body>
+</html>
